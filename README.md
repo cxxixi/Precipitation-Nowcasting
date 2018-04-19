@@ -7,20 +7,20 @@ This is an easy-to-understand implementation of ConvLSTM model(fisrt proposed by
 
 ## DATA
 
-#####Two datasets are available for training and testing in this project.
+##### Two datasets are available for training and testing in this project.
 1. Tianchi CNKI 2017 dataset（Provided by Shenzhen Meteorological Bureau）.You can download the datasets [here](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.6d453864enogCW&raceId=231596)
 
-##Prerequisites
-Env: Ubuntu 16.04+
-     Python 3.6
-     Pytorch 0.3.1
+## Prerequisites  
+Env: Ubuntu 16.04+  
+     Python 3.6  
+     Pytorch 0.3.1  
      
 Make sure these libs have been installed in your environment.
 Lib:
      Arrow 
      
 
-##Guidance
+## Guidance
 
 1. [`Download the all package`]() and unpack it with the command:
 [``]
