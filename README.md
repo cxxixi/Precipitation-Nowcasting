@@ -25,37 +25,37 @@ Python 3.6 Packages needed:
 
 1. Download and install Anaconda environment 
 ```
-  \# wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
-  \# bash Anaconda3-5.1.0-Linux-x86_64.sh
+    \# wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+    \# bash Anaconda3-5.1.0-Linux-x86_64.sh
 ```
-&ensp;&ensp;&ensp;&ensp;More on the how to install Anaconda, see [`this passage`](https://www.jianshu.com/p/03d757283339)
+&ensp;&ensp;&ensp;&ensp;More on how to install Anaconda, see [`this passage`](https://www.jianshu.com/p/03d757283339)
 
 2. Install an environment(optional but suggested)
 ```
-\# conda create -n pytorch python=3.6 
+    \# conda create -n pytorch python=3.6 
 ```
 3. Activate your new-built environemt and install Pytorch and torchvision
 ```
-\# source activate pytorch 
-\# pip3 install torch torchvision
+    \# source activate pytorch 
+    \# pip3 install torch torchvision
 ```
 ### Train the model 
 
 1. [`Download the all package`]() and unpack it with the command:  
 
 ``` 
-$ tar conlstm.tar.gz YOUR PATH
+    \# tar conlstm.tar.gz YOUR PATH
 ```
 2. Train the model 
 ```
-Python3 training.py
+    Python3 training.py
 ```
 
 ### Running the tests  
 Run the test.py with the command. 
 
 ```
-python3 test.py  
+    python3 test.py  
 ```
 
 You'll get a visualization of the CSI, POD, FAR like this:  
