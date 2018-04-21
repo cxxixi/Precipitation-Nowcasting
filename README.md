@@ -11,14 +11,15 @@ This is an easy-to-understand implementation of ConvLSTM model(fisrt proposed by
 ## Getting Started
 ### Prerequisites  
 Environment:   
-     Ubuntu 16.04+ 
-     Anaconda ....
-     Python 3.6  
-     Pytorch 0.3.1  
+&ensp;&ensp;&ensp;&ensp;Ubuntu 16.04+   
+&ensp;&ensp;&ensp;&ensp;Anaconda 3-5.1  
+&ensp;&ensp;&ensp;&ensp;Python 3.6  
      
 Python 3.6 Packages needed:  
-     Arrow 
-    
+&ensp;&ensp;Arrow
+&ensp;&ensp;Pytorch 0.3.1 
+&ensp;&ensp;PIL
+
 ### Installing
 
 1. Download and install anaconda  
