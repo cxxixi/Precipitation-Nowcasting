@@ -1,4 +1,5 @@
-# Precipitation-Nowcasting
+
+pip3 install torch torchvision# Precipitation-Nowcasting
 
 This is an easy-to-understand implementation of ConvLSTM model(fisrt proposed by [Xinjian Shi et al.])(https://arxiv.org/abs/1506.04214https://arxiv.org/abs/1506.04214) in a real-world precipitation nowcasting problem with Pytorch. Here presents the guidance on how to run this project by yourself. Enjoy!
 
