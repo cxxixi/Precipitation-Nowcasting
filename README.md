@@ -22,10 +22,10 @@ Python 3.6 Packages needed:
 ### Installing
 
 1. Download and install anaconda  
-   ```
+```
   \# wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
   \# bash Anaconda3-5.1.0-Linux-x86_64.sh
-   ```
+```
    More on the how to install, see [`this passage`](https://www.jianshu.com/p/03d757283339)
 
 2. Install an environment(optional but suggested)
@@ -38,6 +38,7 @@ Python 3.6 Packages needed:
 ```
 
 1. [`Download the all package`]() and unpack it with the command:  
+
 ``` 
 $ tar 
 ```
@@ -48,9 +49,11 @@ $ source activate YOUR_ENV
 
 ### Running the tests  
 Run the test.py with the command. 
+
 ```
 python3 test.py  
 ```
+
 You'll get a visualization of the CSI, POD, FAR like this:  
 (CSI: critical success Index; POD: Probability of detection; FAR: False alarm rate )
 
@@ -61,4 +64,3 @@ You'll get a visualization of the CSI, POD, FAR like this:
 
 ## Notes
 1. [`Notes on ConvLSTM`](https://github.com/cxxixi/Precipitation-Nowcasting/issues/1)
-
