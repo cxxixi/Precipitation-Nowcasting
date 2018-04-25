@@ -6,6 +6,10 @@ This is an easy-to-understand implementation of ConvLSTM model(fisrt proposed by
 ## DATA
 #### Two open-sourced datasets are available for training and testing in this project.
 
+http://bit.ly/2Jpyg2W
+
+http://bit.ly/2Jotjre gx28
+
 1. An pre-masked radar datasets.(Included in the package)   
 2. Tianchi CNKI 2017 dataset（Provided by Shenzhen Meteorological Bureau）.This dataset is not included yet. However, You can download the datasets [here](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.6d453864enogCW&raceId=231596)
 
