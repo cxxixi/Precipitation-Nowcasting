@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+#! /usr/bin/python3
+"""
+@author: cx,pqxu
+"""
+
 from PIL import Image
 import torch.utils.data as data
 import arrow
