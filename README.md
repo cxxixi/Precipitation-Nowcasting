@@ -69,10 +69,6 @@ Evaluate your model's performance by running
   python3 evaluate.py
 ```
 
-You'll get a visualization of the CSI, POD, FAR like this:  
-(CSI: critical success Index; POD: Probability of detection; FAR: False alarm rate )
-
-
 ### Authors  
      cxxixi
      pqx
