@@ -89,7 +89,7 @@ class Model(nn.Module):
 def run_training(args,reload=False):     
 
     #Initialize model
- if reload:
+    if reload:
         model_list = []
         print("Reloading exsiting model")
         maximum = 0
