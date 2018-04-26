@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+#! /usr/bin/python3
+"""
+@author: pqxu
+ edited by: cx
+"""
+
+
 import numpy as np
 import os
 from PIL import Image
@@ -28,7 +36,6 @@ Circle,x,y = initcircle(Size,Detect_r)
 
 
 def main(dir):
-    # patten = re.compile(())
     for root, dir, files in os.walk(dir):
         # print root
         for file in files:
