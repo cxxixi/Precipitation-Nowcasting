@@ -22,19 +22,24 @@ Python 3.6 Packages needed:
 &ensp;&ensp;`PIL`
 
 ### Installing
-
-1. Download and install Anaconda environment 
+1. Install CUDA8
+```
+  \# sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+  \# sudo apt-get update
+  \# sudo apt-get install cuda
+```
+2. Download and install Anaconda environment 
 ```
   \# wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
   \# bash Anaconda3-5.1.0-Linux-x86_64.sh
 ```
 &ensp;&ensp;&ensp;&ensp;More on how to install Anaconda, see [`this passage`](https://www.jianshu.com/p/03d757283339)  
 
-2. Install an environment(optional but suggested)
+3. Install an environment(optional but suggested)
 ```
   \# conda create -n pytorch python=3.6 
 ```
-3. Activate your new-built environemt and install Pytorch and torchvision
+4. Activate your new-built environemt and install Pytorch and torchvision
 ```
   \# source activate pytorch 
   \# pip3 install torch torchvision
@@ -42,10 +47,12 @@ Python 3.6 Packages needed:
 
 ### Train the model 
 
-1. [`Download the all package`]() and unpack it with the command:  
+1. Download the all package and unpack it with the command:  
 ``` 
   \# tar zxvf conlstm.tar.gz YOUR WORK PATH
-```
+```  
+Note: you also need to unpack the files in the original `data` directory before training  
+
 2. Train the model 
 ```
   Python3 training.py
@@ -67,8 +74,8 @@ You'll get a visualization of the CSI, POD, FAR like this:
 
 
 ### Authors  
-     cxxixi;
-     pqx；
+     cxxixi
+     pqx
 
 ## Notes
 1. [`Notes on ConvLSTM`](https://github.com/cxxixi/Precipitation-Nowcasting/issues/1)
