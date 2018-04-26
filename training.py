@@ -89,15 +89,27 @@ class Model(nn.Module):
 def run_training(args,reload=False):     
 
     #Initialize model
-    if reload:
+ if reload:
         model_list = []
         print("Reloading exsiting model")
-        for model in os.listdir(args.model_dir):
-            model_list.append(model)
-        model = torch.load(model_list[-1])
+        maximum = 0
+        model_name = "model_"+str(maximum)+".pkl"
+        for model_name in os.listdir(args.model_dir):
+            num = int(model_name.split("_")[1][:-4])
+            if num > maximum:
+                maximum = num
+        model_name = "model_"+str(maximum)+".pkl"
+        model = torch.load(args.model_dir+model_name)
+        start = maximum+1
 
-    print('Initiating new model')
+    else:
+        print('Initiating new model')
+        
+        model = Model()
+        model = model.cuda()
+        start = 0
 
+    torch.manual_seed(1)
     summary = open(args.logs_train_dir+"5_10_2ly.txt","w") ## you can change the name of your summary. 
     self_built_dataset = util.Dataloader0(args.data_dir+args.trainset_name,
                                           args.seq_start,
@@ -109,9 +121,6 @@ def run_training(args,reload=False):
         num_workers=4,
         drop_last = True)
 
-    torch.manual_seed(1)
-    model = Model()
-    model = model.cuda()
     criterion = nn.L1Loss()
     optimizer = torch.optim.Adam(model.parameters(),lr=args.lr,weight_decay=args.wd)
     loss_ave = 0
