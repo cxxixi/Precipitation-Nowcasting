@@ -17,9 +17,9 @@ Environment:
 * CUDA 8
      
 Python 3.6 Packages needed:  
-&ensp;&ensp;[`Arrow`]
-&ensp;&ensp;[`Pytorch 0.3.1`] 
-&ensp;&ensp;[`PIL`]
+&ensp;&ensp;`Arrow`
+&ensp;&ensp;`Pytorch 0.3.1` 
+&ensp;&ensp;`PIL`
 
 ### Installing
 
@@ -28,7 +28,8 @@ Python 3.6 Packages needed:
   \# wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
   \# bash Anaconda3-5.1.0-Linux-x86_64.sh
 ```
-&ensp;&ensp;&ensp;&ensp;More on how to install Anaconda, see [`this passage`](https://www.jianshu.com/p/03d757283339)
+&ensp;&ensp;&ensp;&ensp;More on how to install Anaconda, see [`this passage`](https://www.jianshu.com/p/03d757283339)  
+
 2. Install an environment(optional but suggested)
 ```
   \# conda create -n pytorch python=3.6 
@@ -43,18 +44,22 @@ Python 3.6 Packages needed:
 
 1. [`Download the all package`]() and unpack it with the command:  
 ``` 
-  \# tar conlstm.tar.gz YOUR PATH
+  \# tar zxvf conlstm.tar.gz YOUR WORK PATH
 ```
 2. Train the model 
 ```
   Python3 training.py
 ```
 
-### Running the tests  
-Run the test.py with the command. 
+### Running the tests 
 
+Run the test.py with the command. 
 ```
   python3 test.py  
+```
+Evaluate your model's performance by running 
+```
+  python3 evaluate.py
 ```
 
 You'll get a visualization of the CSI, POD, FAR like this:  
