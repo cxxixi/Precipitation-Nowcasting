@@ -58,7 +58,7 @@ Note: you also need to unpack the files in the original `data` directory before 
   Python3 training.py
 ```
 
-### Running the tests 
+### Running the test 
 
 Run the test.py with the command. 
 ```
